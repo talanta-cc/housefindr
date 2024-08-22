@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #c7c2d1;
+}
+
+.user-options i {
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: orange; /* Icon color updated to orange */
+}
+
+nav > * {
+    margin: 0 10px;
+}
+
+.content {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.property-details {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #999;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+}
+
+.location {
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.location i {
+    margin-right: 5px;
+    color: orange; /* Location icon color */
+}
+
+.property-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.property-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.small-images {
+    display: flex;
+    gap: 10px;
+}
+
+.small-images img {
+    width: calc(33.33% - 10px);
+    border-radius: 10px;
+}
+
+.property-info {
+    margin-top: 20px;
+}
+
+.property-info h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.property-info p {
+    color: #777;
+    margin-top: 5px;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.features ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.features i {
+    color: green; /* Adjust the color of the tick icon */
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+}
+
+.agent-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures the chat icon is on the far right */
+    margin-top: 20px;
+}
+
+.agent-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.agent-info .highlight {
+    background-color: yellow; /* Highlight color */
+    padding: 2px 4px; /* Padding for better visibility */
+    border-radius: 3px; /* Optional: rounded corners */
+}
+
+.agent-info .chat-icon {
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer; /* Indicates it's clickable */
+}
+
+.schedule-tour, .make-offer {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange; /* Button color updated to orange */
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.schedule-tour:hover, .make-offer:hover {
+    background-color: #e68a00; /* Darker shade for hover effect */
+}
+
+.guarantees {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
