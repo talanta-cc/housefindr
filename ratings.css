@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     max-width: 500px;
     background-color: #fff;
     padding: 20px;
@@ -21,6 +21,7 @@ body {
 h1 {
     color: #333;
     margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
 .star-rating {
@@ -38,13 +39,13 @@ h1 {
     cursor: pointer;
 }
 
-.star-rating input[type="radio"]:checked ~ label {
-    color:  #ff7e5f;
+.star-rating input[type="radio"]:checked~label {
+    color: #ffeb3b;
 }
 
 .star-rating label:hover,
-.star-rating label:hover ~ label {
-    color:  #ff7e5f;
+.star-rating label:hover~label {
+    color: #ffeb3b;
 }
 
 .comment-section {
@@ -71,7 +72,7 @@ h1 {
 }
 
 button {
-    background-color:  #ff7e5f;
+    background-color: #333;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -83,4 +84,28 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .star-rating {
+        font-size: 1.5em;
+    }
+
+    .comment-section label {
+        font-size: 1em;
+    }
+
+    .comment-section textarea {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
 }
