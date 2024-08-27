@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Houses</title>
+    <link rel="stylesheet" href="view-house.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Review.html">Review</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="About_us.html">About Us</a></li>
+                <li><a href="sign_up.html">sign-up</a></li>
+                <li><a href="Add house.html">Add House</a></li>
+                <li><a href="view-houses.html">View Houses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="houses-section">
+            <h2>Houses List</h2>
+            <div id="houses-container"></div>
+        </section>
+    </main>
+    <!-- view-houses.html -->
+<div id="housesContainer" class="houses-section">
+    <!-- Houses will be dynamically added here -->
+</div>
+
+    <!-- view-houses.html -->
+<script>
+    // Function to display houses on the View Houses page
+    function displayHouses() {
+        const housesContainer = document.getElementById('housesContainer');
+        housesContainer.innerHTML = '';
+    
+        // Retrieve houses from localStorage
+        const houses = JSON.parse(localStorage.getItem('houses')) || [];
+    
+        // Loop through houses and create HTML for each
+        houses.forEach(house => {
+            const houseCard = document.createElement('div');
+            houseCard.className = 'house-card';
+    
+            houseCard.innerHTML = `
+                <img src="${house.imageUrl}" alt="${house.name}">
+                <h3>${house.name}</h3>
+                <p><strong>Location:</strong> ${house.location}</p>
+                <p><strong>Type:</strong> ${house.type}</p>
+                <p><strong>Price:</strong> ${house.price}</p>
+                <p>${house.description}</p>
+                <p class="features"><strong>Unique Features:</strong> ${house.features || 'N/A'}</p>
+                <button class="remove-btn" onclick="removeHouse('${house.name}')">Remove House</button>
+            `;
+    
+            housesContainer.appendChild(houseCard);
+        });
+    }
+    
+    // Function to remove a house
+    function removeHouse(houseName) {
+        let houses = JSON.parse(localStorage.getItem('houses')) || [];
+    
+        // Filter out the house to be removed
+        houses = houses.filter(house => house.name !== houseName);
+    
+        // Save the updated houses array back to localStorage
+        localStorage.setItem('houses', JSON.stringify(houses));
+    
+        // Refresh the house list
+        displayHouses();
+    }
+    
+    // Load houses when the page is loaded
+    document.addEventListener('DOMContentLoaded', displayHouses);
+    </script>
+    
+
+    <script src="view-houses.js"></script>
+</body>
+</html>
