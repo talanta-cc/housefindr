@@ -1,0 +1,23 @@
+{
+    "reviews": [
+        {
+            "username": "Richard",
+            "rating": 5,
+            "reviewText": "Amaziiing  😀",
+            "date": "13-05-2024"
+        },
+        {
+            "username": "Gideon",
+            "rating": 5,
+            "reviewText": "Good product. Just as I ordered 🤗 ",
+            "date": "06-05-2024"
+        },
+        {
+            "username": "Cornelius",
+            "rating": 5,
+            "reviewText": "Perfect 100% ❤ ",
+            "date": "22-04-2024"
+        }
+        
+    ]
+}
