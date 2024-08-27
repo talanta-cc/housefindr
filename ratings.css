@@ -83,9 +83,11 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #ff7e5f;
 }
-
+.button1{
+    color:#ff7e5f; ;
+}
 
 @media screen and (max-width: 600px) {
     h1 {
