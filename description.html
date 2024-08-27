@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Listing</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="description.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header"> 
         <nav>
             <div class="logo">
-                <img src="\assets\images\logo.jpg" alt="logo">
+                <img src="assets/images/logo.jpg" alt="logo">
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="Search for property">
+                <input type="text" placeholder="Search for property" id="search-input">
+                <button id="search-button"><i class="fa fa-search"></i></button>
             </div>
             <div class="user-options">
                 <i class="fa fa-envelope" aria-hidden="true" alt="Messages"></i>
@@ -34,11 +35,11 @@
                 
             </div>
             <div class="property-images">
-                <img src="\assets\images\housecover.jpeg" alt="Main House">
+                <img src="assets/images/housecover.jpeg" alt="Main House" id="main-image">
                 <div class="small-images">
-                    <img src="\assets\images\image1.jpeg" alt="House Image 1">
-                    <img src="\assets\images\image2.jpg" alt="House Image 2">
-                    <img src="\assets\images\image3.webp" alt="House Image 3">
+                    <img src="assets/images/image1.jpeg" alt="House Image 1" onclick="changeMainImage(this.src)">
+                    <img src="assets/images/image2.jpg" alt="House Image 2" onclick="changeMainImage(this.src)">
+                    <img src="assets/images/image3.webp" alt="House Image 3" onclick="changeMainImage(this.src)">
                 </div>
             </div>
             <div class="property-info">
@@ -52,7 +53,8 @@
             
             <div class="description">
                 <h2>Description</h2>
-                <p>Griya Adi is a new housing complex offering various elegant and comfortable homes for families. Each unit in this housing complex is equipped with spacious and bright rooms, efficient and ergonomic design, ensuring the comfort and privacy of its residents. In addition, this housing complex provides facilities such as a children's playground, a jogging track, and a garden area. With a strategic location and a modern, functional design, Griya Adi Housing is the ideal choice for those seeking a beautiful and high-quality home.</p>
+                <p id="description-text">Griya Adi is a new housing complex offering various elegant and comfortable homes for families...</p>
+                <button id="read-more">Read More</button>
             </div>
             <div class="features">
                 <ul>
@@ -77,10 +79,10 @@
                 <span>5% Cheaper</span>
             </div>
             <div class="agent-info">
-                <img src="\assets\images\agent1.jpg" alt="Agent">
+                <img src="assets/images/agent1.jpg" alt="Agent">
                 <p>Jordi Ardi</p>
                 <p class="highlight">Seller</p>
-                <i class="fa fa-comments chat-icon"></i>
+                <i class="fa fa-comments chat-icon" id="chat-icon"></i>
             </div>
             
             <button class="schedule-tour">Schedule a Tour</button>
@@ -92,6 +94,6 @@
         </aside>
     </main>
 
-    <script src="script.js"></script>
+    <script src="description.js"></script>
 </body>
 </html>
