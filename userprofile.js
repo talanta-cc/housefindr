@@ -1,28 +1,29 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Follow/Unfollow Button
-    const followBtn = document.getElementById('follow-btn');
-    followBtn.addEventListener('click', function() {
-        if (followBtn.textContent === 'Follow') {
-            followBtn.textContent = 'Unfollow';
-            followBtn.style.backgroundColor = '#ccc';
-        } else {
-            followBtn.textContent = 'Follow';
-            followBtn.style.backgroundColor = '#ff7f0e';
+document.addEventListener("DOMContentLoaded", function() {
+    const profileCard = document.querySelector('.profile-card');
+    const leftSide = document.querySelector('.left-side');
+    const rightSide = document.querySelector('.right-side');
+
+    function adjustLayout() {
+        if (window.innerWidth <= 768) { // Tablet and smaller devices
+            profileCard.style.flexDirection = 'column';
+            leftSide.style.width = '100%';
+            leftSide.style.borderRight = 'none';
+            rightSide.style.width = '100%';
+            rightSide.style.marginTop = '20px';
+            rightSide.style.padding = '10px';
+        } else { // Larger devices
+            profileCard.style.flexDirection = 'row';
+            leftSide.style.width = '35%';
+            leftSide.style.borderRight = '1px solid #ddd';
+            rightSide.style.width = '65%';
+            rightSide.style.marginTop = '0';
+            rightSide.style.padding = '20px';
         }
-    });
+    }
 
-    // Message Button Alert
-    const messageBtn = document.getElementById('message-btn');
-    messageBtn.addEventListener('click', function() {
-        alert('Message functionality is not yet implemented!');
-    });
+    // Run on initial load
+    adjustLayout();
 
-    // Animate Progress Bars
-    const progressBars = document.querySelectorAll('.progress');
-    progressBars.forEach(bar => {
-        const progressValue = bar.getAttribute('data-progress');
-        setTimeout(() => {
-            bar.style.width = progressValue + '%';
-        }, 500); // Delays the animation to ensure it's noticeable
-    });
+    // Run on window resize
+    window.addEventListener('resize', adjustLayout);
 });
