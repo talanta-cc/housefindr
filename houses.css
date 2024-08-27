@@ -31,6 +31,7 @@ header p {
     font-size: 1.2em;
 }
 
+
 .properties {
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +96,10 @@ header p {
     transform: translateY(-10px);
 }
 
-.why-rent, .how-to-apply, footer {
+
+.why-rent,
+.how-to-apply,
+footer {
     background: white;
     padding: 30px;
     margin-bottom: 20px;
@@ -103,10 +107,13 @@ header p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.why-rent h2, .how-to-apply h2, footer h2 {
+.why-rent h2,
+.how-to-apply h2,
+footer h2 {
     color: #ff7e5f;
     margin-bottom: 15px;
 }
+
 
 footer {
     text-align: center;
@@ -118,4 +125,76 @@ footer {
 
 footer p {
     margin: 5px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .properties {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .property {
+        width: 80%;
+    }
+
+    .why-rent,
+    .how-to-apply,
+    footer {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .property {
+        width: 100%;
+    }
+
+    .property img {
+        height: 150px;
+    }
+
+    .property-info h2 {
+        font-size: 1.2em;
+    }
+
+    .property-info p,
+    .property-info ul {
+        font-size: 0.9em;
+    }
+
+    .property-info a {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .why-rent,
+    .how-to-apply,
+    footer {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
 }
