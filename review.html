@@ -3,29 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Product Reviews</title>
+    <link rel="stylesheet" href="review.css">
 </head>
 <body>
-    <div class="review-container">
-        <div class="review-header">
-            <h1>Product Name</h1>
-            <div class="rating">
-                <span>4.5</span>
-                <div class="stars">
-                    <span>⭐️</span>
-                    <span>⭐️</span>
-                    <span>⭐️</span>
-                    <span>⭐️</span>
-                    <span>⭐️</span>
-                </div>
-                <p id="review-count">0 reviews</p>
-            </div>
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.jpg" alt="Property Logo">
         </div>
-        <div class="review-list">
-            <!-- Reviews will be dynamically loaded here -->
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="#">Profile</a></li>
+            
+            <li><a href="sign_up.html">sign-up</a></li>
+        </ul>
+       
+    </nav>
+
+    
+    
+  <section class="review-section">
+    <h2>What our customers say</h2>
+    <div class="ratings-overview">
+        <div class="overall-rating">
+            <span>4.9</span>
+            <span>⭐⭐⭐⭐⭐</span>
         </div>
+        <button class="write-review-button">Write a review</button>
     </div>
-    <script src="script.js"></script>
+    <div class="review-cards">
+        <div class="review-card">
+            <div class="reviewer-info">
+                <img src="images/profile.jpeg" alt="Reviewer 1">
+                <span class="reviewer-name">Kyle Saul</span>
+                <span class="reviewer-rating">⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="review-text">Great place to look over Los Angeles...</p>
+            <span class="review-date">2 days ago</span>
+        </div>
+        <!-- More review cards here -->
+    </div>
+    <button class="arrow arrow-left">❮</button>
+    <button class="arrow arrow-right">❯</button>
+</section>
+
+
+    <script src="review.js"></script>
 </body>
 </html>
