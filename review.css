@@ -190,4 +190,56 @@ nav {
     padding: 10px 20px;
     border-radius: 4px;
     text-decoration: none;
+}@media (max-width: 768px) {
+    /* Adjust navigation bar layout */
+    nav {
+      flex-wrap: wrap; /* Wrap items onto multiple lines */
+      justify-content: center; /* Center items horizontally */
+    }
+  
+    .nav-links {
+      gap: 10px; /* Reduce gap between items */
+    }
+  
+    .hero {
+      height: auto; /* Adjust hero section height for smaller screens */
+      padding: 50px 20px;
+    }
+  
+    .search-bar {
+      margin-top: 150px; /* Adjust search bar position */
+    }
+  
+    .features {
+      flex-direction: column; /* Stack feature items vertically */
+      align-items: center;
+    }
+  
+    .feature-item {
+      margin-bottom: 20px;
+    }
+  
+    .slider {
+      max-width: 100%; /* Make slider responsive */
+    }
+  
+    .property-card {
+      margin: 0; /* Remove margin between property cards */
+    }
+  }
+  
+  /* For screens smaller than 480px */
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 36px; /* Reduce heading size */
+    }
+  
+    .search-bar {
+      flex-direction: column; /* Stack search input and button vertically */
+      align-items: flex-start;
+    }
+  
+    .search-input {
+      width: 100%;
+    }
 }
