@@ -1,0 +1,113 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* House Cards Grid */
+.houses-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.house-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.house-card:hover {
+    transform: translateY(-5px);
+}
+
+.house-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.house-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.house-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.house-card .features {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.remove-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.remove-btn:hover {
+    background-color: #cc0000;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .house-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .house-card {
+        flex: 1 1 100%;
+    }
+}
