@@ -40,12 +40,12 @@ h1 {
 }
 
 .star-rating input[type="radio"]:checked~label {
-    color: #ffeb3b;
+    color: #ff7e5f;
 }
 
 .star-rating label:hover,
 .star-rating label:hover~label {
-    color: #ffeb3b;
+    color: #ff7e5f;
 }
 
 .comment-section {
@@ -72,7 +72,7 @@ h1 {
 }
 
 button {
-    background-color: #333;
+    background-color: #ff7e5f;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -83,10 +83,10 @@ button {
 }
 
 button:hover {
-    background-color: #ff7e5f;
+    background-color: #fcd25f;
 }
 .button1{
-    color:#ff7e5f; ;
+    color:#ff7e5f;
 }
 
 @media screen and (max-width: 600px) {

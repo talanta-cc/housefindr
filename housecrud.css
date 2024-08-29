@@ -31,7 +31,7 @@ body {
 }
 
 #house-list th {
-    background-color: #ff6600;
+    background-color: #ff7e5f;
     color: #fff;
     font-weight: bold;
 }
@@ -60,11 +60,11 @@ body {
 }
 
 #house-list .view-button {
-    background-color:  #ff6600; 
+    background-color:  #ff7e5f;
 }
 
 #house-list .edit-button {
-    background-color: #ff6600; 
+    background-color:#ff7e5f;
 }
 
 #house-list .delete-button {
