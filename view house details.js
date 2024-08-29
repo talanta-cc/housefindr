@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const house = {
-        image: 'house1.jpg',
+        image: 'house.jpeg',
         name: 'Luxury Villa',
         location: 'Beverly Hills, CA',
         price: '$5,000,000',
