@@ -17,9 +17,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #333;
+    background-color:orangered;
     padding: 10px;
-    color: #fff;
+    color: orangered;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
