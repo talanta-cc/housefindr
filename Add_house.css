@@ -13,9 +13,9 @@ body {
 }
 
 header {
-    background-color: orangered;
+    background-color: #ff7e5f;
     padding: 20px;
-    color: orangered;
+    color: #ff7e5f;
     text-align: center;
 }
 
@@ -35,7 +35,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: orangered;
+    background-color: #ff7e5f;
 }
 
 .add-house-section, .houses-section {

@@ -17,9 +17,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color:orangered;
+    background-color:#ff7e5f;
     padding: 10px;
-    color: orangered;
+    color: #ff7e5f;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,7 +48,7 @@ nav .nav-links a {
 }
 
 nav .nav-links a:hover {
-    background-color: orangered;
+    background-color:#ff7e5f ;
     border-radius: 4px;
 }
 
@@ -142,7 +142,7 @@ nav .nav-links a:hover {
 }
 
 .signup-form input:focus {
-    border-color: orangered;
+    border-color: #ff7e5f;
     background-color: #fff;
     outline: none;
 }
@@ -151,7 +151,7 @@ nav .nav-links a:hover {
 .signup-form button {
     width: 100%;
     padding: 14px;
-    background-color: orangered;
+    background-color:#ff7e5f ;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -161,7 +161,7 @@ nav .nav-links a:hover {
 }
 
 .signup-form button:hover {
-    background-color: #cc3300;
+    background-color: #ff7e5f;
 }
 
 /* Additional Links */
@@ -169,7 +169,7 @@ nav .nav-links a:hover {
     display: block;
     text-align: center;
     margin-top: 20px;
-    color: orangered;
+    color: #ff7e5f;
     text-decoration: none;
     font-weight: bold;
 }

@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-    background-color: #ff6600; /* Orange theme */
+    background-color:#ff7e5f ; /* Orange theme */
     padding: 15px;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ nav {
 
 .nav-links a:hover {
     background-color: white;
-    color: #ff6600;
+    color: #ff7e5f;
     border-radius: 5px;
 }
 
@@ -49,12 +49,12 @@ nav {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    border-top: 5px solid #ff6600; /* Orange border */
+    border-top: 5px solid #ff7e5f; /* Orange border */
 }
 
 h1 {
     text-align: center;
-    color: #ff6600; /* Orange text color */
+    color:#ff7e5f ; /* Orange text color */
 }
 
 .house-card {
