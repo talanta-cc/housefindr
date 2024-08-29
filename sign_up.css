@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -16,17 +16,11 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    background-color:orangered;
-    padding: 10px;
-    color: orangered;
+    align-items: center;
+    background-color: #ff7e5f;
+    padding: 10px 20px;
+    color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-nav .logo {
-    display: flex;
-    /* justify-content: center;
-    width: 100%; */
 }
 
 nav .logo img {
@@ -44,17 +38,17 @@ nav .nav-links a {
     color: #fff;
     font-weight: 500;
     padding: 8px 16px;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 nav .nav-links a:hover {
-    background-color: orangered;
-    border-radius: 4px;
+    background-color: #f2552c;
 }
 
 /* Sign-up Form Container */
 .signup-container {
-    max-width: 500px;
+    max-width: 400px;
     margin: 50px auto;
     padding: 40px;
     background-color: #fff;
@@ -63,18 +57,21 @@ nav .nav-links a:hover {
     text-align: center;
 }
 
+.signup-container .logo img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
 .signup-container h2 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 28px;
     color: #333;
-    text-align: center;
     font-weight: bold;
 }
 
 .signup-container p {
     color: #666;
     margin-bottom: 30px;
-    text-align: center;
     font-size: 16px;
 }
 
@@ -87,8 +84,8 @@ nav .nav-links a:hover {
 
 .social-btn {
     flex: 1;
-    margin: 0 10px;
-    padding: 12px;
+    margin: 0 5px;
+    padding: 10px;
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -129,29 +126,29 @@ nav .nav-links a:hover {
 }
 
 /* Form Fields */
-.signup-form input[type="text"],
-.signup-form input[type="email"],
-.signup-form input[type="password"] {
+#signup-form input[type="email"],
+#signup-form input[type="password"] {
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
     background-color: #f9f9f9;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.signup-form input:focus {
-    border-color: orangered;
+#signup-form input:focus {
+    border-color: #ff7e5f;
     background-color: #fff;
     outline: none;
 }
 
 /* Sign-up Button */
-.signup-form button {
+#signup-form button {
     width: 100%;
-    padding: 14px;
-    background-color: orangered;
+    padding: 12px;
+    background-color: #ff7e5f;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -160,73 +157,63 @@ nav .nav-links a:hover {
     transition: background-color 0.3s ease;
 }
 
-.signup-form button:hover {
-    background-color: #cc3300;
+#signup-form button:hover {
+    background-color: #f2552c;
 }
 
-/* Additional Links */
-.signup-form a {
-    display: block;
-    text-align: center;
+/* Footer */
+.footer p {
     margin-top: 20px;
-    color: orangered;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer a {
+    color: #ff7e5f;
     text-decoration: none;
     font-weight: bold;
 }
 
-.signup-form a:hover {
+.footer a:hover {
     text-decoration: underline;
 }
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    /* Adjust navigation bar layout */
     nav {
-      flex-wrap: wrap; /* Wrap items onto multiple lines */
-      justify-content: center; /* Center items horizontally */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-  
+
     .nav-links {
-      gap: 10px; /* Reduce gap between items */
+        gap: 10px;
+        flex-direction: column;
     }
-  
-    .hero {
-      height: auto; /* Adjust hero section height for smaller screens */
-      padding: 50px 20px;
+
+    .signup-container {
+        width: 90%;
+        padding: 20px;
     }
-  
-    .search-bar {
-      margin-top: 150px; /* Adjust search bar position */
+}
+
+@media (max-width: 480px) {
+    .signup-container h2 {
+        font-size: 24px;
     }
-  
-    .features {
-      flex-direction: column; /* Stack feature items vertically */
-      align-items: center;
+
+    #signup-form button {
+        font-size: 16px;
+        padding: 10px;
     }
-  
-    .feature-item {
-      margin-bottom: 20px;
+
+    .social-btn {
+        padding: 8px;
+        margin: 0 3px;
     }
-  
-    .slider {
-      max-width: 100%; /* Make slider responsive */
-    }
-  
-    .property-card {
-      margin: 0; /* Remove margin between property cards */
-    }
-  }
-  
-  /* For screens smaller than 480px */
-  @media (max-width: 480px) {
-    .hero h1 {
-      font-size: 36px; /* Reduce heading size */
-    }
-  
-    .search-bar {
-      flex-direction: column; /* Stack search input and button vertically */
-      align-items: flex-start;
-    }
-  
-    .search-input {
-      width: 100%;
+
+    .social-btn img {
+        height: 20px;
+        width: 20px;
     }
 }

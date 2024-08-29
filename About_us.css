@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: orangered;
-    color: orangered;
+    background-color: #ff7e5f;
+    color: #ff7e5f;
     line-height: 1.6;
 }
 
@@ -34,7 +34,7 @@ header {
 }
 
 .nav-links a:hover {
-    background-color: orangered;
+    background-color: #ff7e5f;
     border-radius: 4px;
 }
 
@@ -44,7 +44,7 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: orangered;
+    background-color:#ff7e5f ;
 }
 
 .about-content {
@@ -90,8 +90,8 @@ header {
 }
 
 .read-more:hover {
-    color: orangered;
-    border-color: orangered;
+    color:#ff7e5f ;
+    border-color: #ff7e5f;
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;

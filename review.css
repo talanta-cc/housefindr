@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: orangered;
+    background-color: #ff7e5f;
     color: #333;
     line-height: 1.6;
 }
@@ -17,7 +17,7 @@ body {
     max-width: 1000px;
     margin: 50px auto;
     padding: 40px;
-    background-color: orangered;
+    background-color:#ff7e5f ;
     border-radius: 15px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -43,7 +43,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 28px;
-    color: orangered;
+    color:#ff7e5f ;
     font-weight: bold;
 }
 
@@ -55,7 +55,7 @@ body {
 
 .ratings-overview .write-review-button {
     padding: 10px 20px;
-    background-color: orangered;
+    background-color:#ff7e5f ;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -138,7 +138,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: orangered;
+    background-color:#ff7e5f ;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -185,7 +185,7 @@ nav {
 }
 
 .contact-btn {
-    background-color: orangered;
+    background-color:#ff7e5f ;
     color: #fff;
     padding: 10px 20px;
     border-radius: 4px;
