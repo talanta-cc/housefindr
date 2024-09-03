@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff3e0;
+}
+
+.container {
+    width: 60%; 
+    margin: 20px auto; 
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+}
+
+h1 {
+    text-align: center;
+    color: #d35400;
+}
+
+.house-details {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.house-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    max-width: 600px;
+}
+
+.description h2 {
+    color: #ff7e5f;
+}
+
+.description p {
+    color: #666;
+}
+
+#booking-form {
+    width: 100%; 
+    margin: 20px 0; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid #ff7e5f; 
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box; 
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ff7e5f;
+    display: block;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ff7e5f;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fffaf2;
+    color: #333;
+    width: calc(100% - 22px); 
+}
+
+button {
+    padding: 10px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d35400;
+}

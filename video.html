@@ -1,0 +1,10 @@
+<video class="video" autoplay>
+    
+</video>
+
+<script>
+    let video= document.querySelector('.video');
+    navigator.mediaDevices.getUserMedia({video:true}).then(function(stream){
+        video.srcObject=stream;
+    })
+</script>

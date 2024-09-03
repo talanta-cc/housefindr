@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A House</title>
+    <link rel="stylesheet" href="bookahouse.css">
+</html>
+<body>
+    <div class="container">
+        <h1>Book Your Dream House</h1>
+        <div class="house-details">
+            <img src="assets/images/image3.webp" alt="House Image" class="house-image">
+            <div class="description">
+                <h2>A Beautiful Country Side House</h2>
+                <p>The environment is one of the most serene, with a 4 bedroom features, with a 3 bathrooms, a spacious living space, and a modernized kitchen. It is the best living space that present peace and tranquility to those living in it. </p>
+                <p><strong>Price: </strong> $300,000</p>
+            </div>
+
+        </div>
+
+        <form  id="booking-form">
+            <h2>Fill in your details below to book: </h2>
+            <label for="customer-name">Name: </label>
+            <input type="text" id="customer-name" name="customer-name" required>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="move-in-date"> Desired Move-In Date: </label>
+            <input type="date" id="move-in-date" name="move-in-date" required>
+
+            <label for="requirements"> Special Requirements</label>
+            <textarea name="requirements" id="requirements" rows="4" placeholder="Describe what you are looking for in the house here .........."></textarea>
+
+            <button type="submit">Submit Booking</button>
+
+        </form>
+    </div>
+
+    <script src="bookahouse.js"></script>
+</body>
