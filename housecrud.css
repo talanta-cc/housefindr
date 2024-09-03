@@ -5,6 +5,39 @@ body {
     box-sizing: border-box;
     background-color: #f8f9fa;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7e5f;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    background-color: #f2552c;
+}
+
 
 .container {
     width: 85%;
