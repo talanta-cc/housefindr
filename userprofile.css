@@ -186,3 +186,28 @@ nav {
     background-color: #ff7f0e; /* Orange color */
     border-radius: 5px;
 }
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff7e5f;
+}
+
