@@ -17,7 +17,7 @@ function showNextImage() {
   sliderImages.style.transform = `translateX(${translateX}%)`;
 }
 
-setInterval(showNextImage, 3000);
+//setInterval(showNextImage, 3000);
 
 prevButton.addEventListener('click', () => {
     moveSlide(-1);
