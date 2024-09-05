@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -126,17 +125,8 @@ nav .nav-links a:hover {
 }
 
 /* Form Fields */
-#signup-form input[type="Name"]{
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-#signup-form input[type="Phone"],
+#signup-form input[type="text"],
+#signup-form input[type="tel"],
 #signup-form input[type="email"],
 #signup-form input[type="password"] {
     width: 100%;
