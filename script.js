@@ -1,80 +1,41 @@
-// Slider Functionality
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+let currentIndex = 0;
+const images = document.querySelectorAll(".slider-images img");
 const sliderImages = document.querySelector('.slider-images');
-const images = document.querySelectorAll('.property-card');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-let counter = 0;
-const size = images[0].clientWidth;
 
-nextBtn.addEventListener('click', () => {
-    if (counter >= images.length - 1) return;
-    sliderImages.style.transition = "transform 0.5s ease-in-out";
-    counter++;
-    sliderImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
+function slideImages() {
+  currentIndex = (currentIndex + 1) % images.length;
+  document.querySelector(".slider-images").style.transform = `translateX(-${currentIndex * 100}vw)`;
+}
+
+setInterval(slideImages, 3000); // Automatically slide every 3 seconds
+
+function showNextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  const translateX = -currentIndex * 100;
+  sliderImages.style.transform = `translateX(${translateX}%)`;
+}
+
+setInterval(showNextImage, 3000);
+
+prevButton.addEventListener('click', () => {
+    moveSlide(-1);
 });
 
-prevBtn.addEventListener('click', () => {
-    if (counter <= 0) return;
-    sliderImages.style.transition = "transform 0.5s ease-in-out";
-    counter--;
-    sliderImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
+nextButton.addEventListener('click', () => {
+    moveSlide(1);
 });
 
-// Heart Click Functionality
-const loveEmojis = document.querySelectorAll('.love-emoji');
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.property-card');
+    const totalSlides = slides.length;
+    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+    sliderImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
 
-loveEmojis.forEach(emoji => {
+document.querySelectorAll('.love-emoji').forEach(emoji => {
     emoji.addEventListener('click', () => {
         emoji.classList.toggle('red');
-    });
-});
-
-
-nextBtn.addEventListener('click', () => {
-    if (counter >= images.length - 1) return;
-    sliderImages.style.transition = "transform 0.5s ease-in-out";
-    counter++;
-    sliderImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
-
-prevBtn.addEventListener('click', () => {
-    if (counter <= 0) return;
-    sliderImages.style.transition = "transform 0.5s ease-in-out";
-    counter--;
-    sliderImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});nextBtn.addEventListener('click', () => {
-    if (counter >= images.length - 1) return;
-    sliderImages.style.transition = "transform 0.5s ease-in-out";
-    counter++;
-    sliderImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
-
-prevBtn.addEventListener('click', () => {
-    if (counter <= 0) return;
-    sliderImages.style.transition = "transform 0.5s ease-in-out";
-    counter--;
-    sliderImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
-
-// Heart Click Functionality
-
-loveEmojis.forEach(emoji => {
-    emoji.addEventListener('click', () => {
-        emoji.classList.toggle('red');
-    });
-});
-
-// Add Functionality to Buttons
-document.querySelector('.search-btn').addEventListener('click', () => {
-    alert('Search functionality not implemented.');
-});
-
-document.querySelector('.contact-btn').addEventListener('click', () => {
-    alert('Contact Us button clicked.');
-});
-
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        alert(`${link.textContent} page not implemented.`);
     });
 });
